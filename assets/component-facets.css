@@ -238,7 +238,9 @@
   border-style: solid;
   border-color: rgba(var(--color-foreground), var(--popup-border-opacity));
   border-radius: var(--popup-corner-radius);
-  box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity));
+  box-shadow: var(--popup-shadow-horizontal-offset)
+    var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
+    rgba(var(--color-shadow), var(--popup-shadow-opacity));
   background-color: rgb(var(--color-background));
   position: absolute;
   top: calc(100% + 0.5rem);
@@ -270,7 +272,7 @@
 }
 
 .facets__item label,
-.facets__item input[type='checkbox'] {
+.facets__item input[type="checkbox"] {
   cursor: pointer;
 }
 
@@ -283,7 +285,7 @@
   word-break: break-word;
 }
 
-.facet-checkbox input[type='checkbox'] {
+.facet-checkbox input[type="checkbox"] {
   position: absolute;
   opacity: 1;
   width: 1.6rem;
@@ -309,7 +311,7 @@
   top: 1.4rem;
 }
 
-.facet-checkbox > input[type='checkbox']:checked ~ .icon-checkmark {
+.facet-checkbox > input[type="checkbox"]:checked ~ .icon-checkmark {
   visibility: visible;
 }
 
@@ -319,7 +321,7 @@
     border: 0.1rem solid rgb(var(--color-background));
   }
 
-  .facet-checkbox > input[type='checkbox']:checked ~ .icon-checkmark {
+  .facet-checkbox > input[type="checkbox"]:checked ~ .icon-checkmark {
     border: none;
   }
 }
@@ -550,10 +552,9 @@ a.active-facets__button.focused .active-facets__button-inner,
   border-style: solid;
   border-width: 0 0 0 var(--drawer-border-width);
   filter: drop-shadow(
-    var(--drawer-shadow-horizontal-offset)
-    var(--drawer-shadow-vertical-offset)
-    var(--drawer-shadow-blur-radius)
-    rgba(var(--color-shadow), var(--drawer-shadow-opacity))
+    var(--drawer-shadow-horizontal-offset) var(--drawer-shadow-vertical-offset)
+      var(--drawer-shadow-blur-radius)
+      rgba(var(--color-shadow), var(--drawer-shadow-opacity))
   );
 }
 
@@ -808,7 +809,7 @@ input.mobile-facets__checkbox {
   visibility: hidden;
 }
 
-.mobile-facets__label > input[type='checkbox']:checked ~ .icon-checkmark {
+.mobile-facets__label > input[type="checkbox"]:checked ~ .icon-checkmark {
   visibility: visible;
 }
 
